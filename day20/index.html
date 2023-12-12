@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-tilt>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <!-- social icons box end -->
+        <div class="box-login">
+            <div class="top-header">
+                <h3>Login Now</h3>
+                <small>We are happy to have you back</small>
+            </div>
+            <!-- top header end -->
+        <!-- input boxes in form tag -->
+        <form action="#" method="get">
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" name="username" id="username" class="input-box" required/>
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" class="input-box" required/>
+                <label for="password">Password</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="chk" id="chk" class="check">
+                    <label for="chk">Remember Me</label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" value="Log in" class="input-submit" id="login">
+                </div>
+
+                <div class="forget">
+                    <a href="#">Forget Password?</a>
+                </div>
+        </div>
+             <!-- input group end-->
+        </form>
+    </div>
+     <!-- box login end -->
+        <div class="box-register">
+            <span id="new-user">New User?</span>
+            <div>
+                <a href="index1.html" target="_blank">
+                    <input type="button" value="Register" class="input-submit">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- box ends here -->
+    </div>
+     <!-- container end -->
+    <script src="script/vanilla-tilt.babel.js" type="text/javascript">
+        VanillaTilt.init(document.querySelector(".your-element"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+</html>

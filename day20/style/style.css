@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: url(../image/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    display: flex;
+    position: relative;
+    padding: 60px 20px 30px 20px;
+    height: 550px;
+    width: 350px;
+    background-color: transparent;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+.social-icons{
+    position: absolute;
+    font-size: 25px;
+    top: 40px;
+    left: 32%;
+    letter-spacing: 10px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: black;
+}
+.social-icons i:hover {
+    color: rgb(132, 163, 236);
+    cursor: pointer;
+    font-size: 1.5em;
+    transition:  0.3s ease-in-out;
+}
+.box-login{
+    position: absolute;
+    width: 85%;
+    left: 27px;
+    transition: 0.2s ease-in-out;
+}
+.box-register{
+    position: absolute;
+    width: 85%;
+    bottom: 35px;
+    transition:  0.5s ease-in-out;
+    text-align: center;
+}
+.top-header{
+    text-align: center;
+    margin: 30px 0;
+}
+.top-header h3{
+    font-size: 22px;
+    font-weight: 600px;
+    margin-bottom: 8px;
+}
+.top-header h3:hover{
+    font-size: 1.5em;
+    color: white;
+}
+.top-header small:hover{
+    font-size: 1.1em;
+    color: white;
+}
+.input-field{
+    margin: 12px 0;
+    position: relative;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 45px 0px 20px;
+    background: rgba(194, 191, 191, 0.6);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+.input-field label{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+.input-box:focus ~ label,
+.input-box:valid ~ label{
+    top: 2px;
+    font-size: 15px;
+    color: rgb(232, 12, 136);
+    font-weight: 500;
+}
+.remember:hover{
+    font-size: 1.2em;
+    color: white;
+}
+.input-submit{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background: linear-gradient(125deg,rgb(224, 18, 134),white);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.input-submit:hover{
+    font-size: 1.3em;
+    color: white;
+    box-shadow: 0px 4px 20px rgba(147, 57, 57,0.7);
+}
+.forget{
+    text-align: center;
+    font-size: 15px;
+}
+.forget a{
+    text-decoration: none;
+    color: black;
+}
+.forget a:hover{
+    color: white;
+}
+#new-user{
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+}
+/* rgb(132, 163, 236) */
